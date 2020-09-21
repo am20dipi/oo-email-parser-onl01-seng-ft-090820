@@ -4,16 +4,18 @@
 # or whitespace (' ').
 
 class EmailAddressParser
-  attr_accessor :email_addresses
+  attr_accessor :email_address
   
   CSV = []
   
   def initialize(email_addresses)
-    @email_addresses = email_addresses
+    @email_address = email_addresses
   end
   
   def parse
-    CSV.parse
+    email_address_array = @email_address.split(/[, ]/).uniq
+    email_address_array.reject! {|x| x.empty?}
+    email_address_array
   end
 end
     
