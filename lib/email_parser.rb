@@ -13,7 +13,7 @@ class EmailAddressParser
   end
   
   def parse
-    CSV.parse(email_addresses)
+    CSV.parse
   end
 end
     
