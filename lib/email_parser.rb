@@ -8,4 +8,6 @@ class EmailAddressParser
   
   def initialize(str)
     @parse = EmailAddressParser.new(email_addresses)
+    parse
+  end
     
