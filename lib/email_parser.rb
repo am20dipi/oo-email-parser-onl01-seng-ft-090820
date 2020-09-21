@@ -8,7 +8,7 @@ class EmailAddressParser
   
   def initialize(str)
     email_addresses = EmailAddressParser.new(email_addresses)
-    email_adresses.parse
+    email_adresses.parse.uniq
   end
 end
     
