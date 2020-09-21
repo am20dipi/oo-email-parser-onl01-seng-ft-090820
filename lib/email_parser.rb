@@ -17,6 +17,6 @@ class EmailAddressParser
     email_address_array.reject! {|x| x.empty?}
     email_address_array
   end
-end
+
 end
     
