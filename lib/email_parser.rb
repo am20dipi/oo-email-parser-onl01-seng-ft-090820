@@ -18,4 +18,5 @@ class EmailAddressParser
     email_address_array
   end
 end
+end
     
