@@ -10,4 +10,5 @@ class EmailAddressParser
     @parse = EmailAddressParser.new(email_addresses)
     parse
   end
+end
     
